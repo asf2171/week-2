@@ -42,8 +42,14 @@ for record in records:
 
 # [PRINT OUT THE RESULTING VALUES BY CONCATENATING THEM TO THESE LINES TO CHECK YOUR WORK]
 
-print 'min price: '
-print 'max price: ' 
-print 'average price: '
+import numpy
+minimum = min (record.price) 
+maximum = max (record.price)
+average = numpy.mean(record.price)  
+        
+print 'min price: minimum 
+print "max price:" maximum  
+print "average price:" average 
+
 
 client.db_close()
